@@ -1,0 +1,26 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 300px;
+  width: 300px;
+  border: 2px solid blue;
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  padding: 5px;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.cell-num {
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  font-size: 10px;
+}
