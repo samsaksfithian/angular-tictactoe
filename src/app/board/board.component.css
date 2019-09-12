@@ -1,10 +1,12 @@
 :host {
+  --board-size: 3;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 300px;
-  width: 300px;
-  border: 2px solid blue;
+  grid-template-columns: repeat(var(--board-size), 1fr);
+  grid-template-rows: repeat(var(--board-size), 1fr);
+  min-height: 300px;
+  min-width: 300px;
+  /* border: 2px solid blue; */
 }
 
 .cell {
@@ -16,6 +18,7 @@
   padding: 5px;
   background-color: lightblue;
   cursor: pointer;
+  font-size: 3.5rem;
 }
 
 .cell-num {
@@ -23,4 +26,7 @@
   left: 1px;
   top: 0px;
   font-size: 10px;
+  color: grey;
+  /* !important isn't working for some reason... */
+  -webkit-text-stroke: none !important;
 }
