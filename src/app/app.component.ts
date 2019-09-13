@@ -188,7 +188,7 @@ export class AppComponent {
    * @param p2 {string} the character for the second player
    * @param boardSize {number} the dimension of the board
    */
-  reset(p1: string = 'X', p2: string = 'Y', boardSize: number = 3): void {
+  reset(p1: string = '#', p2: string = '?', boardSize: number = 3): void {
     this.player1 = p1;
     this.player2 = p2;
     this.boardSize = boardSize;

@@ -2,10 +2,10 @@
 <h3 class="info-line">
   Next player: <span class="player{{ currPlayerNumber() }}">{{ currPlayer }}</span>
 </h3>
-<h4 class="info-line" *ngIf="!!winner">
+<h3 class="info-line" *ngIf="!!winner">
   <span class="player{{ currPlayerNumber() }}">{{ winner }}</span> Wins!
-</h4>
-<h4 class="info-line" *ngIf="draw">It's a Draw!</h4>
+</h3>
+<h3 class="info-line" *ngIf="draw">It's a Draw!</h3>
 <app-board
   [board]="board"
   [players]="[player1, player2]"

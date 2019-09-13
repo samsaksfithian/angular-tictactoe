@@ -21,12 +21,12 @@
   font-size: 3.5rem;
 }
 
-.cell-num {
+.cell .cell-num {
   position: absolute;
   left: 1px;
   top: 0px;
   font-size: 10px;
   color: grey;
-  /* !important isn't working for some reason... */
-  -webkit-text-stroke: none !important;
+  font-weight: initial !important;
+  -webkit-text-stroke: 0px transparent !important;
 }
