@@ -10,7 +10,7 @@ export class BoardComponent {
   @Input() players: Array<string>;
   @Output() cellClick = new EventEmitter();
 
-  showCellNums = true;
+  showCellNums = false;
 
   /**
    * Gets the number of the player in the specified cell on the board, if there is one.
