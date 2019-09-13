@@ -1,6 +1,7 @@
 # Angular Project
 
 Super basic Tic-Tac-Toe game used as an exercise to begin learning AngularJS.
+Live app: https://angular-tictactoe-ssaksfithian.netlify.com/
 
 ## Task
 
